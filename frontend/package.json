@@ -1,0 +1,7 @@
+{
+  "name": "frontend-wrapper",
+  "private": true,
+  "scripts": {
+    "start": "cd /app && yarn dev"
+  }
+}

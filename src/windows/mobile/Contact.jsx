@@ -9,13 +9,16 @@ const MobileContactContent = () => {
 
       <div className="content">
         <img
-          src="/images/adrian.jpg"
-          alt="Adrian"
-          className="w-20 rounded-full"
+          src="/images/eric.jpg"
+          alt="Eric Rai"
+          className="w-20 rounded-full object-cover aspect-square"
         />
 
         <h3>Let's Connect</h3>
-        <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
+        <p>
+          Creative Freelancer & Content Creator from Nepal. Got a project, a wild
+          idea, or want to collab? Let's talk.
+        </p>
 
         <ul>
           {socials.map(({ id, bg, link, icon, text }) => (

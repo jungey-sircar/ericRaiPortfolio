@@ -10,7 +10,7 @@ const MobileTerminalContent = () => {
 
       <div className="techstack">
         <p>
-          <span className="font-bold">@adrian %</span> show tech stack
+          <span className="font-bold">@eric %</span> show tech stack
         </p>
 
         <ul className="content">
@@ -34,7 +34,7 @@ const MobileTerminalContent = () => {
 
         <div className="footnote">
           <p>
-            <Check size={20} />5 of 5 stacks loaded successfully (100%)
+            <Check size={20} />6 of 6 stacks loaded successfully (100%)
           </p>
 
           <p className="text-black dark:text-white">

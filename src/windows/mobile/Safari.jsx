@@ -19,7 +19,7 @@ const MobileSafariContent = () => {
       <MobileWindowHeader windowKey="safari" title="Safari" />
 
       <div className="blog">
-        <h2>My Developer Blog</h2>
+        <h2>Eric's Channels</h2>
 
         <div className="space-y-8">
           {blogPosts.map(({ id, image, title, date, link }) => (
@@ -32,7 +32,7 @@ const MobileSafariContent = () => {
                 <p>{date}</p>
                 <h3>{title}</h3>
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                  Check out the full post <MoveRight className="icon-hover" />
+                  Visit channel <MoveRight className="icon-hover" />
                 </a>
               </div>
             </div>
