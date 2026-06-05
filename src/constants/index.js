@@ -157,13 +157,6 @@ const socials = [
     link: "https://nerds.games",
   },
   {
-    id: 2,
-    text: "erai.com.np",
-    icon: "/icons/globe.svg",
-    bg: "#f97316",
-    link: "https://erai.com.np",
-  },
-  {
     id: 3,
     text: "YouTube",
     icon: "/icons/youtube.svg",
