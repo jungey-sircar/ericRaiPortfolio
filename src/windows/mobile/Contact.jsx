@@ -10,7 +10,7 @@ const MobileContactContent = () => {
       <div className="content">
         <img
           src="/images/eric.jpg"
-          alt="Eric Rai"
+          alt="Eric"
           className="w-20 rounded-full object-cover aspect-square"
         />
 

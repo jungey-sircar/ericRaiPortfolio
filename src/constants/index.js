@@ -374,10 +374,10 @@ const WORK_LOCATION = {
       ],
     },
 
-    // Project 3 — ERAI (AI / ML)
+    // Project 3 — (AI / ML)
     {
       id: 7,
-      name: "ERAI — AI / ML Platform",
+      name: "AI / ML Platform",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -391,7 +391,7 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "ERAI — an AI/ML dashboard and analytics platform powering intelligent decision-making.",
+            "Eric — an AI/ML dashboard and analytics platform powering intelligent decision-making.",
             "Built with ML pipelines, predictive models, and real-time data visualizations for actionable insights.",
             "From churn prediction to demand forecasting — clean dashboards that turn raw data into growth.",
             "Live at: erai.com.np",
@@ -490,7 +490,7 @@ const ABOUT_LOCATION = {
       subtitle: "Meet Eric — Freelancer from Nepal",
       image: "/images/eric.jpg",
       description: [
-        "Hey! I'm Eric Rai 👋 — a freelance developer & creator based in Nepal.",
+        "Hey! I'm Eric 👋 — a freelance developer & creator based in Nepal.",
         "I build full-stack web apps, mobile apps, AI/ML dashboards, and Business Intelligence solutions for clients around the world.",
         "When I'm not shipping code, I'm sharing perspectives, ideas, and stories on YouTube, TikTok, and Instagram.",
         "Always up for an interesting project — let's build something that matters.",
