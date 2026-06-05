@@ -488,17 +488,17 @@ body {
     }
 
     .content {
-      @apply flex-1 p-8 bg-white dark:bg-dark-700 max-w-2xl relative text-black dark:text-white;
+      @apply flex-1 p-8 bg-white dark:bg-dark-700 max-w-2xl text-black dark:text-white grid grid-cols-3 gap-6 auto-rows-min content-start;
 
       li {
-        @apply absolute flex items-center flex-col gap-3;
+        @apply flex items-center flex-col gap-3 cursor-pointer;
 
         img {
-          @apply object-contain object-center size-16 relative group-hover:scale-105;
+          @apply object-contain object-center size-16 group-hover:scale-105 transition-transform;
         }
 
         p {
-          @apply text-sm text-center font-medium w-40;
+          @apply text-sm text-center font-medium max-w-[10rem];
         }
       }
     }

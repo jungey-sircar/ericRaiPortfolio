@@ -19,7 +19,7 @@ const MobileSafariContent = () => {
       <MobileWindowHeader windowKey="safari" title="Safari" />
 
       <div className="blog">
-        <h2>Eric's Channels</h2>
+        <h2>Eric's Websites & Channels</h2>
 
         <div className="space-y-8">
           {blogPosts.map(({ id, image, title, date, link }) => (

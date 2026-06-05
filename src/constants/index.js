@@ -83,6 +83,22 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
+    date: "nerds.games",
+    title:
+      "A gaming hub for nerds — explore games, reviews, and everything in the gaming world.",
+    image: "/images/blog-nerds-games.png",
+    link: "https://nerds.games",
+  },
+  {
+    id: 2,
+    date: "erai.com.np",
+    title:
+      "My personal brand and digital presence — projects, services, and stories from Nepal.",
+    image: "/images/blog-erai.png",
+    link: "https://erai.com.np",
+  },
+  {
+    id: 3,
     date: "Eric Perspectives",
     title:
       "Watch my latest videos on YouTube — tech, perspectives, and stories from Nepal.",
@@ -90,14 +106,14 @@ const blogPosts = [
     link: "https://www.youtube.com/@ericperspectives",
   },
   {
-    id: 2,
+    id: 4,
     date: "TikTok • @jungey_sircar",
     title: "Short-form takes, behind-the-scenes clips, and creative experiments.",
     image: "/images/blog2.png",
     link: "https://www.tiktok.com/@jungey_sircar",
   },
   {
-    id: 3,
+    id: 5,
     date: "Instagram • @jungey_sircar",
     title: "Snapshots from life, work, and everything in between.",
     image: "/images/blog3.png",
@@ -135,48 +151,69 @@ const techStack = [
 const socials = [
   {
     id: 1,
+    text: "nerds.games",
+    icon: "/icons/globe.svg",
+    bg: "#7c3aed",
+    link: "https://nerds.games",
+  },
+  {
+    id: 2,
+    text: "erai.com.np",
+    icon: "/icons/globe.svg",
+    bg: "#f97316",
+    link: "https://erai.com.np",
+  },
+  {
+    id: 3,
     text: "YouTube",
     icon: "/icons/youtube.svg",
     bg: "#ff0033",
     link: "https://www.youtube.com/@ericperspectives",
   },
   {
-    id: 2,
+    id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#0a66c2",
     link: "https://www.linkedin.com/in/voidman-eric-1ab90313b/",
   },
   {
-    id: 3,
+    id: 5,
     text: "Upwork",
     icon: "/icons/upwork.svg",
     bg: "#14a800",
     link: "https://www.upwork.com/freelancers/~01d77cf8ad1a56027c",
   },
   {
-    id: 4,
+    id: 6,
     text: "Facebook",
     icon: "/icons/facebook.svg",
     bg: "#1877f2",
     link: "https://www.facebook.com/sangpang.eric",
   },
   {
-    id: 5,
+    id: 7,
     text: "TikTok",
     icon: "/icons/tiktok.svg",
     bg: "#010101",
     link: "https://www.tiktok.com/@jungey_sircar",
   },
   {
-    id: 6,
+    id: 8,
     text: "Instagram",
     icon: "/icons/instagram.svg",
     bg: "#e1306c",
     link: "https://instagram.com/jungey_sircar",
   },
   {
-    id: 7,
+    id: 9,
+    text: "GitHub",
+    icon: "/icons/github.svg",
+    bg: "#333333",
+    link: "https://github.com/jungey-sircar",
+  },
+  {
+    id: 10,
     text: "Email",
     icon: "/icons/mail.svg",
     bg: "#f4656b",
@@ -215,19 +252,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/voidman.jpg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/voidman-2.jpg",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/voidman-3.jpg",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/eric.jpg",
   },
 ];
 
@@ -249,14 +286,14 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // Project 1 — Full Stack Web
+    // Project 1 — OrderFlow Shop
     {
       id: 5,
-      name: "Full Stack Web Platform",
+      name: "OrderFlow Shop",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
-      windowPosition: "top-[5vh] left-5",
+      windowPosition: "top-[5vh] left-8",
       children: [
         {
           id: 1,
@@ -266,19 +303,19 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Modern full-stack web applications built end-to-end — from database schema to pixel-perfect UI.",
-            "I design REST/GraphQL APIs, secure auth flows, and craft responsive React/Next.js frontends with Tailwind.",
-            "Optimized for performance, SEO, and clean UX so businesses ship fast and grow faster.",
-            "Tech: React, Next.js, Node.js, FastAPI, PostgreSQL, MongoDB, Docker.",
+            "OrderFlow Shop — a full-stack e-commerce & order management platform built for speed and scale.",
+            "Seamless shopping experience with real-time order tracking, inventory management, and analytics dashboards.",
+            "Designed and shipped end-to-end: storefront UI, payment integration, admin panel, and fulfillment pipeline.",
+            "Live at: orderflow.shop",
           ],
         },
         {
           id: 2,
-          name: "live-demo.url",
+          name: "live-site.url",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://www.upwork.com/freelancers/~01d77cf8ad1a56027c",
+          href: "https://orderflow.shop",
           position: "top-10 right-20",
         },
         {
@@ -288,7 +325,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/project-orderflow.png",
         },
       ],
     },
@@ -300,7 +337,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      windowPosition: "top-[22vh] left-8",
       children: [
         {
           id: 1,
@@ -337,14 +374,14 @@ const WORK_LOCATION = {
       ],
     },
 
-    // Project 3 — AI / ML Dashboard
+    // Project 3 — ERAI (AI / ML)
     {
       id: 7,
-      name: "AI / ML Dashboard",
+      name: "ERAI — AI / ML Platform",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[33vh] left-7",
+      windowPosition: "top-[39vh] left-8",
       children: [
         {
           id: 1,
@@ -354,19 +391,19 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Interactive dashboards that turn raw data into decisions you can act on.",
-            "I build ML pipelines, train predictive models, and surface insights through clean, real-time visualizations.",
-            "From churn prediction to demand forecasting — paired with Power BI / Plotly / custom React dashboards.",
-            "Stack: Python, scikit-learn, TensorFlow, PyTorch, Pandas, Plotly, Power BI.",
+            "ERAI — an AI/ML dashboard and analytics platform powering intelligent decision-making.",
+            "Built with ML pipelines, predictive models, and real-time data visualizations for actionable insights.",
+            "From churn prediction to demand forecasting — clean dashboards that turn raw data into growth.",
+            "Live at: erai.com.np",
           ],
         },
         {
           id: 2,
-          name: "demo.url",
+          name: "live-site.url",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://www.upwork.com/freelancers/~01d77cf8ad1a56027c",
+          href: "https://erai.com.np",
           position: "top-10 right-20",
         },
         {
@@ -376,19 +413,19 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
+          imageUrl: "/images/project-erai.png",
         },
       ],
     },
 
-    // Project 4 — Business Intelligence
+    // Project 5 — Games
     {
-      id: 8,
-      name: "Business Intelligence Suite",
+      id: 9,
+      name: "Games — nerds.games",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-40 left-40",
-      windowPosition: "top-[15vh] left-40",
+      position: "top-52 left-40",
+      windowPosition: "top-[5vh] left-48",
       children: [
         {
           id: 1,
@@ -398,20 +435,29 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "End-to-end BI solutions — ETL pipelines, data warehousing, and executive-ready dashboards.",
-            "I help teams move from spreadsheets to a single source of truth with KPIs that actually drive growth.",
-            "Automated reporting, alerting, and self-serve analytics for stakeholders.",
-            "Tools: Power BI, Tableau, Metabase, PostgreSQL, dbt, Airflow.",
+            "nerds.games — a gaming hub built for nerds, by a nerd.",
+            "Explore games, reviews, leaderboards, and everything in the gaming world.",
+            "A community-driven platform for gamers who take their hobby seriously.",
+            "Live at: nerds.games",
           ],
         },
         {
           id: 2,
-          name: "hire-me.url",
+          name: "live-site.url",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://www.upwork.com/freelancers/~01d77cf8ad1a56027c",
+          href: "https://nerds.games",
           position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "preview.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-games.png",
         },
       ],
     },
