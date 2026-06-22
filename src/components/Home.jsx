@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { useGSAP } from "@gsap/react";
 import { Draggable } from "gsap/Draggable";
+import { useEffect, useState } from "react";
 
 import useWindowStore from "#store/window";
 import useLocationStore from "#store/location";
@@ -11,6 +12,22 @@ const projects = locations.work?.children ?? [];
 const Home = () => {
   const { openWindow } = useWindowStore();
   const { setActiveLocation } = useLocationStore();
+  const [isTouchDevice, setIsTouchDevice] = useState(() =>
+    window.matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 0
+  );
+
+  useEffect(() => {
+    const checkTouchDevice = () => {
+      setIsTouchDevice(
+        window.matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 0
+      );
+    };
+
+    checkTouchDevice();
+    window.addEventListener("resize", checkTouchDevice);
+
+    return () => window.removeEventListener("resize", checkTouchDevice);
+  }, []);
 
   const handleOpenProjectFinder = (project) => {
     setActiveLocation(project);
@@ -18,8 +35,12 @@ const Home = () => {
   };
 
   useGSAP(() => {
-    Draggable.create(".folder");
-  }, []);
+    if (isTouchDevice) return;
+
+    const instances = Draggable.create(".folder");
+
+    return () => instances.forEach((instance) => instance.kill());
+  }, [isTouchDevice]);
 
   return (
     <section id="home">

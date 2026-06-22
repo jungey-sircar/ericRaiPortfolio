@@ -88,7 +88,11 @@ const MobileFinderContent = () => {
       <div className="finder-gallery">
         <ul>
           {currentItems?.map((item) => (
-            <li key={item.id} onClick={() => handleItemClick(item)}>
+            <li
+              key={item.id}
+              onPointerUp={() => handleItemClick(item)}
+              style={{ touchAction: "manipulation" }}
+            >
               <div className="finder-item">
                 {item.kind === "folder" ? (
                   <img

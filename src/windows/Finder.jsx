@@ -27,7 +27,8 @@ const Finder = () => {
     items?.map((item) => (
       <li
         key={item.id}
-        onClick={() => setActiveLocation(item)}
+        onPointerUp={() => setActiveLocation(item)}
+        style={{ touchAction: "manipulation" }}
         className={clsx(
           item.id === activeLocation?.id ? "active" : "not-active"
         )}
@@ -61,7 +62,8 @@ const Finder = () => {
           {activeLocation?.children?.map((item) => (
             <li
               key={item.id}
-              onClick={() => openItem(item)}
+              onPointerUp={() => openItem(item)}
+              style={{ touchAction: "manipulation" }}
             >
               <img src={item.icon} alt={item.name} />
               <p>{item.name}</p>
