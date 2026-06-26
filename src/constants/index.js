@@ -87,7 +87,7 @@ const blogPosts = [
     title:
       "A gaming hub for nerds — explore games, reviews, and everything in the gaming world.",
     image: "/images/blog-nerds-games.png",
-    link: "https://nerds.games",
+    link: "https://asheshr-app-051a01f0d006.herokuapp.com/",
   },
   {
     id: 2,
@@ -154,7 +154,7 @@ const socials = [
     text: "nerds.games",
     icon: "/icons/globe.svg",
     bg: "#7c3aed",
-    link: "https://nerds.games",
+    link: "https://asheshr-app-051a01f0d006.herokuapp.com/",
   },
   {
     id: 3,
@@ -440,7 +440,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://nerds.games",
+          href: "https://asheshr-app-051a01f0d006.herokuapp.com/",
           position: "top-10 right-20",
         },
         {
